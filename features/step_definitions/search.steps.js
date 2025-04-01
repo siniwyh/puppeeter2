@@ -49,7 +49,7 @@ When("user buys ticket", async function () {
 });
 
 When("user returns to the previous page", async function () {
-  await this.page.goBack()
+  await this.page.goto("https://qamid.tmweb.ru/client/index.php");
 });
 
 Then("sees occupied seats cannot be reserved", async function () {

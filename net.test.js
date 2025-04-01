@@ -49,9 +49,9 @@ describe("Cinema site tests", () => {
         await clickElement(page, "div:nth-child(3) span:nth-child(3)");
         await clickElement(page, ".acceptin-button");
         await clickElement(page, ".acceptin-button");
-        await page.goBack()
-        await page.goBack()
-        await clickElement(page, ".movie-seances__time[href='#'][data-seance-id='217']");
+        await page.goto("https://qamid.tmweb.ru/client/index.php");
+        await clickElement(page, "a:nth-child(4)");
+        await clickElement(page, ".movie-seances__time[href='#'][data-seance-id='199']");
         await page.waitForSelector(".buying-scheme");
         await hoverElement(page, "div:nth-child(3) span:nth-child(3)");  // Пришлось добавить т.к. клик не работает без наведения, даже с задержкой
         await clickElement(page, "div:nth-child(3) span:nth-child(3)");

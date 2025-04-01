@@ -15,9 +15,9 @@ Feature: Booking cinema tickets
     Scenario: Occupied seat cannot be reserved
         Given user is on the main page
         When user chooses day and time of session
-        When user selects seat "div:nth-child(6) span:nth-child(9)"
+        When user selects seat "div:nth-child(5) span:nth-child(5)"
         When user buys ticket
         When user returns to the previous page
         When user chooses day and time of session
-        When user selects seat "div:nth-child(6) span:nth-child(9)"
+        When user selects seat "div:nth-child(5) span:nth-child(5)"
         Then sees occupied seats cannot be reserved
